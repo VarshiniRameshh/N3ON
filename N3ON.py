@@ -13,7 +13,7 @@ def N3ON(domain):
            sub_domain = i.strip()
            url = sub_domain + "." + domain
            try:
-               os.system("./.host " + url)
+               os.system("bash .v1l03t " + url)
                sys.exit()
               
            except:
