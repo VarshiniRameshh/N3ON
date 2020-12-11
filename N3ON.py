@@ -1,5 +1,6 @@
 import requests
 import sys
+import os
 
 def banner():
   print "HI EVERYONE!"
@@ -12,8 +13,7 @@ def N3ON(domain):
            sub_domain = i.strip()
            url = sub_domain + "." + domain
            try:
-               res = requests.get("http://"+url)
-               print("Discovered Subdomain :",url)
+               os.system("./.host " + url)
                sys.exit()
               
            except:
