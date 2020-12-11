@@ -22,10 +22,10 @@ def N3ON(domain):
 if len(sys.argv) < 2:
      banner()
      print("Syntax")
-     print("python N3ON.py Domain_Name")
+     print("python N3ON.py Domain_Name | tee -a filename.txt")
      print("Please just enter domain like: google.com not www.google.com")
      print("Example")
-     print("python N3ON.py google.com")
+     print("python N3ON.py google.com | tee -a filename.txt ")
 else:
      domain = sys.argv[1]
      N3ON(domain)
