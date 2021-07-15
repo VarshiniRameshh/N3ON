@@ -1,9 +1,0 @@
-#!/bin/bash
-
-subs=$1
-
-if host $subs &> /dev/null;
-   then
-       echo $subs
-       echo $subs >> v1l03t.txt
-fi
